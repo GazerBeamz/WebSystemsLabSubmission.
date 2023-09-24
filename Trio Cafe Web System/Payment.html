@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Payment </title>
+    </head>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+        }
+        button{
+            font-size: 20px;
+        }
+        a{
+            color: rgb(100, 100, 255);
+        }
+        .cart{
+            position: absolute;
+            margin-top: 134px;
+            margin-right: 40px;
+            top: 0;
+            right: 0;
+        }
+        .checkout{
+            display: block;
+        }
+
+        table,tr,th,td{
+            border: 1px solid black;
+        }
+
+    </style>
+    <body>
+        <header>
+            <h1> Trio Café </h1>
+        </header>
+
+        <nav>
+            <div class="container">
+                <div class="nav-bar">
+                    <p>Coffee Shop</p><hr/>
+                    <ul class="menu">
+                        <li><a href="Home.html" target="_self">Home</a></li> |
+                        <li><a href="Products.html" target="_blank">Product</a></li> |
+                        <li><a href="Services.html" target="_blank">Services</a></li> |
+                        <li><a href="Contact.html" target="_blank">Contact</a></li> |
+                        <li><a href="About.html" target="_blank">About</a></li>
+                        <li><a class="cart" href="cartbox.html" target="_self">Cart</a></li>
+                    </ul>
+                    
+                    <hr/>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <section id = "Main Content">
+            <h2>Checkout</h2>
+            <table>
+                <thead> 
+                    <tr>
+                        <th>Items</th>
+                        <th>Quantity</th>
+                        <th>Sizes</th>
+                        <th>Price</th>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>x2</td>
+                        <td>Medium</td>
+                        <td>P200</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha Cake</td>
+                        <td>x1</td>
+                        <td>---</td>
+                        <td>P110</td>
+                    </tr>
+                    <tr>
+                        <td>Trio's Fudge</td>
+                        <td>x1</td>
+                        <td>---</td>
+                        <td>P100</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Price:</th>
+                        <td>P400</td>
+                    </tr>
+                </tfoot>
+            </table><hr/>
+            <ul>
+                
+                
+
+
+                <li class="checkout">Mode of Service : 
+                    <select name="" id="">
+                        <option value="">Delivery</option>
+                        <option value="">Pickup</option>
+                    </select></li>
+                <li class="checkout">Payment Option : <select name="" id="">
+                        <option value="">Cash</option>
+                        <option value="">E-Wallet</option>
+                    </select></li>
+                <li class="checkout"></li>
+            </ul><hr/>
+            <button>Place Order</button>
+        </section>
+
+        <footer>
+            <h5> &copy; Trio Café</h5>
+        </footer>
+
+    </body>
+</html>

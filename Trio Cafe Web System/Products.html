@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+    </head>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        .nav_links{
+            display: inline-block;
+        }
+
+        button{
+            font-size: 20px;
+        }
+        a{
+            color: rgb(100, 100, 255);
+        }
+        .menu{
+            list-style: none;
+        }
+        .cart{
+            position: absolute;
+            margin-top: 134px;
+            margin-right: 40px;
+            top: 0;
+            right: 0;
+        }
+        li{
+            list-style: none;
+        }
+        
+    </style>
+    <body>
+        <header>
+            <h1> Trio Café </h1>
+        </header>
+
+        <nav>
+            <div class="container">
+                <div class="nav-bar">
+                    <p>Coffee Shop</p><hr/>
+                    <ul class="menu">
+                        <li class="nav_links"><a href="Home.html" target="_self">Home</a></li> |
+                        <li class="nav_links"><a href="Products.html" target="_blank">Product</a></li> |
+                        <li class="nav_links"><a href="Services.html" target="_blank">Services</a></li> |
+                        <li class="nav_links"><a href="Contact.html" target="_blank">Contact</a></li> |
+                        <li class="nav_links"><a href="About.html" target="_blank">About</a></li>
+                        <li><a class="cart" href="cartbox.html">Cart</a></li>
+                        <li><a class="cart" href="cartbox.html">Cart</a></li>
+                    </ul>
+                    <hr/>
+                </div>
+            </div>
+        </nav>
+       
+       <div id = "products_menu">
+           <h2> Menus </h2>
+               <div id = "Coffee_menus">
+                    <h3> Coffee </h3>
+                   
+                   <!-- Menus for Coffee -->
+                    <ul>
+                        <li class="menu" for="coffee"><input type="checkbox" id="coffee" name="coffee">Cappuccino</li>
+                        <li class="menu"><input type="checkbox" id="coffee" name="coffee">Americano</li>
+                        <li class="menu"><input type="checkbox" id="coffee" name="coffee">Latte</li>
+                        <li class="menu"><input type="checkbox" id="coffee" name="coffee">Irish Coffee</li>
+                        <li class="menu"><input type="checkbox" id="coffee" name="coffee"> Mocha</li>
+                    </ul>
+               </div>
+
+               <div id = "Dessert_menus">
+                   <h3> Desserts </h3>
+                   
+                   <!-- Menus for Desserts-->
+                   <ul>
+                    <li class="menu"><input type="checkbox" id="dessert" name="dessert">New York's Cheese Cake</li>
+                    <li class="menu"><input type="checkbox" id="dessert" name="dessert">Blueberry</li>
+                    <li class="menu"><input type="checkbox" id="dessert" name="dessert">Mocha Cake</li>
+                    <li class="menu"><input type="checkbox" id="dessert" name="dessert">Coffee Ice Cream</li>
+                    <li class="menu"><input type="checkbox" id="dessert" name="dessert">Trio's Fudge</li>
+                   </ul>
+               </div>
+       </div>
+       <button>
+           <a href="cartbox.html"> Add to Cart </a>
+       </button>
+
+        <footer>
+            <h5> &copy; Trio Café</h5>
+        </footer>
+
+    </body>
+</html>

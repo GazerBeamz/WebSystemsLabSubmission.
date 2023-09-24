@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Cart </title>
+    </head>
+    <style>
+        *{
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+        }
+        button{
+            font-size: 15px;
+        }
+        a{
+            color: rgb(100, 100, 255);
+        }
+        .cart{
+            position: absolute;
+            margin-top: 134px;
+            margin-right: 40px;
+            top: 0;
+            right: 0;
+        }
+
+        .item{
+            display: block;
+        }
+        
+    </style>
+    <body>
+        <header>
+            <h1> Trio Café </h1>
+        </header>
+
+        <nav>
+            <div class="container">
+                <div class="nav-bar">
+                    <p>Coffee Shop</p><hr/>
+                    <ul class="menu">
+                        <li><a href="Home.html" target="_self">Home</a></li> |
+                        <li><a href="Products.html" target="_blank">Product</a></li> |
+                        <li><a href="Services.html" target="_blank">Services</a></li> |
+                        <li><a href="Contact.html" target="_blank">Contact</a></li> |
+                        <li><a href="About.html" target="_blank">About</a></li>
+                        <li><a class="cart" href="cartbox.html" target="_self">Cart</a></li>
+                    </ul>
+                    
+                    <hr/>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <section id = "Main Content">
+            <h2>Cart</h2>
+            <p>Item/s :</p>
+            <ul>
+                <li class="item">Cappuccino</li>
+                <ul>
+                    <label for="quantity">Quantity:</label>
+                    <li><input type="number" id="quantity" value="1"></li>
+    
+                    <label for="sizes">Sizes:</label>
+                    <li><input type="radio" id="sizes" name="sizes">
+                        <label for="sizes">Large</label>
+                        <input type="radio" id="sizes" name="sizes">
+                        <label for="sizes">Medium</label>
+                        <input type="radio" id="sizes" name="sizes">
+                        <label for="sizes">Small</label></li>
+                </ul>
+                <li class="item">Mocha Cake</li>
+                <ul>
+                    <label for="quantity">Quantity:</label>
+                    <li><input type="number" id="quantity" value="1"></li>
+                </ul>
+                <li class="item">Trio's Fudge</li>
+                <ul>
+                    <label for="quantity">Quantity:</label>
+                    <li><input type="number" id="quantity" value="1"></li>
+                </ul>
+            </ul>
+
+            <button><a href="Payment.html" target="_blank">Proceed to Payment</a></button>
+        </section>
+
+        <footer>
+            <h5> &copy; Trio Café</h5>
+        </footer>
+
+    </body>
+</html>
